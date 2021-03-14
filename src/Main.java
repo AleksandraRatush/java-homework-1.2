@@ -1,12 +1,13 @@
 public class Main {
 
-
+    //Предполагается что у клиета есть овердрафт.
+    // Если сумма перевода отрицательная деньги снимаются со счета
     public static void main (String ... args) {
 
-        int accountBalance = 2_000_000_000;
-        int recipe = 500_000_000;
+        int accountBalance = -1_000;
+        int recipeSum = -2_147_483_647;
 
-        accountBalance = accountBalance + recipe;
+        accountBalance = accountBalance + recipeSum;
         System.out.println(accountBalance);
 
     }
